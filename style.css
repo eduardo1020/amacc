@@ -200,6 +200,59 @@ header h1 {
     font-weight: 600;
 }
 
+/* SECTION TRABALHOS */
+.content-trabalhos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.trabalhos .trabalho {
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.trabalhos .trabalho img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-trabalho {
+    display: none;
+}
+
+.trabalho:hover .text-trabalho {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.trabalho:hover .text-trabalho h5 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.trabalho:hover .text-trabalho p {
+    text-align: center;
+}
+
+.text-trabalho {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.trabalhos .trabalho:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
 
 /* responsive design */
 
