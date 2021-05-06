@@ -228,8 +228,7 @@
 
             <div class="trabalho">
 
-                <img src="./assets/180505457_3899754993474777_8138518468032247889_n.jpg" alt="" width="300px"
-                    height="300px">
+                <img src="./assets/amacc1.jpg" alt="" width="300px" height="300px">
 
                 <div class="text-trabalho">
 
@@ -247,8 +246,7 @@
 
             <div class="trabalho">
 
-                <img src="./assets/180505457_3899754993474777_8138518468032247889_n.jpg" alt="" width="300px"
-                    height="300px">
+                <img src="./assets/amacc2.jpg" alt="" width="300px" height="300px">
 
                 <div class="text-trabalho">
 
@@ -266,8 +264,7 @@
 
             <div class="trabalho">
 
-                <img src="./assets/180505457_3899754993474777_8138518468032247889_n.jpg" alt="" width="300px"
-                    height="300px">
+                <img src="./assets/amacc3.jpg" alt="" width="300px" height="300px">
 
                 <div class="text-trabalho">
 
@@ -283,39 +280,68 @@
 
             </div>
 
-            <div class="trabalho">
 
-                <img src="./assets/180505457_3899754993474777_8138518468032247889_n.jpg" alt="" width="300px"
-                    height="300px">
+        </div>
 
-                <div class="text-trabalho">
+    </section>
 
-                    <h5>Lorem ipsum dolor</h5>
+    <section class="secao contato">
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin, erat et mattis
-                        congue,
-                        lectus metus accumsan dui, eget.
-                    </p>
+        <h1>CONTATO</h1>
+
+        <div class="contato-content">
+
+            <div class="info">
+
+                <div class="info1">
+
+                    <i data-feather="phone"></i>
+                    <span>(61) 3047-7218</span>
 
                 </div>
 
+                <div class="info2">
+
+                    <i data-feather="map-pin"></i>
+                    <span>Scc Projeção 12 - s/n sl 604 - Pte. Alta Norte (Gama), DF</span>
+
+                </div>
+
+                <h2>Doe através do QR CODE</h2>
+
+                <div id="qrcode"></div>
+
             </div>
 
-            <div class="trabalho">
+            <div class="formulario">
 
-                <img src="./assets/180505457_3899754993474777_8138518468032247889_n.jpg" alt="" width="300px"
-                    height="300px">
+                <div class="formulario-content">
 
-                <div class="text-trabalho">
+                    <h2>FALE CONOSCO</h2>
 
-                    <h5>Lorem ipsum dolor</h5>
+                    <form>
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin, erat et mattis
-                        congue,
-                        lectus metus accumsan dui, eget.
-                    </p>
+                        <label for="">Nome:</label>
+                        <input type="text">
+
+                        <br>
+
+                        <label for="">E-mail:</label>
+                        <input type="email">
+
+                        <br>
+
+                        <label for="">Telefone:</label>
+                        <input type="tel">
+
+                        <br><br>
+
+                        <label for="">Mensagem:</label>
+                        <textarea name="" id="" cols="80" rows="5"></textarea>
+
+                        <button type="submit">Enviar</button>
+
+                    </form>
 
                 </div>
 
@@ -338,6 +364,21 @@
             menuToggle.classList.toggle('active')
             navigation.classList.toggle('active')
         }
+    </script>
+
+    <script src="/js/qrcode.min.js"></script>
+
+    <script type="text/javascript">
+
+        var qrcode = new QRCode(document.getElementById('qrcode'), {
+            text: "https://www.youtube.com/watch?v=dRp2XS0nYTE",
+            width: 200,
+            height: 200,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+
     </script>
 
 </body>
