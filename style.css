@@ -171,6 +171,7 @@ header h1 {
 
 /* SECTION SERVIÇOS */
 .servicos {
+    background: #fadcf6;
     margin-top: 10%;
 }
 
@@ -266,22 +267,43 @@ header h1 {
     margin-top: 10%;
 }
 
+.contato h1 {
+    margin-bottom: 5%;
+}
+
 .contato .contato-content {
     display: flex;
     justify-content: center;
 }
 
 .contato .info {
-    border: 1px solid red;
+    background: #FC60A8;
+    color: #fff;
     width: 54%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    font-size: 1.4rem;
+}
+
+.contato .info i { 
+    font-size: 1.5rem;
+    margin-right: 2%;
+}
+
+.info1 {
+    margin-top: 5%;
+    width: 50%;
+}
+
+.info2 {
+    margin-top: 3%;
+    width: 50%;
 }
 
 .contato .formulario {
-    border: 1px solid blue;
     width: 28%;
 }
 
@@ -334,12 +356,40 @@ header h1 {
     font-weight: 600;
 }
 
-#qrcode {
-    width:160px;
-    height:160px;
-    margin-top:15px;
-  }
+.qrcode {   
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
 
+#qrcode {
+    margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+    background: #fadcf6;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+footer .social-medias a {
+    text-decoration: none;
+    color:#7A28CB;
+    margin-left: 20px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+footer p a {
+    text-decoration: none;
+}
 
 /* responsive design */
 
