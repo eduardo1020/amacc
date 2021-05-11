@@ -16,6 +16,10 @@
     <!-- Feather icon script -->
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <!-- Scroll animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -78,7 +82,7 @@
 
         <h1>QUEM SOMOS</h1>
 
-        <P>
+        <p data-aos="fade-left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac massa non urna scelerisque sollicitudin.
             Mauris sagittis arcu ut risus fringilla commodo. Fusce vulputate tincidunt lacus in congue. Quisque
             ullamcorper lorem non mi dictum posuere. Fusce quam libero, semper eget congue quis, hendrerit at ligula.
@@ -88,7 +92,7 @@
             lorem. Donec vehicula ante in magna faucibus tempus. Vestibulum non justo risus. Nulla cursus, nunc sit amet
             egestas accumsan, mauris orci tristique lacus, pellentesque sagittis ligula velit porttitor turpis. Morbi
             nec mi neque. Sed nec interdum arcu. Donec quis egestas nulla, eget ullamcorper turpis.
-        </P>
+        </p>
 
         <div class="image-border">
 
@@ -110,7 +114,7 @@
 
         <div class="card-content">
 
-            <div class="card">
+            <div class="card" data-aos="fade-right">
 
                 <div class="img-card">
 
@@ -130,7 +134,7 @@
 
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-down">
 
                 <div class="img-card">
 
@@ -150,7 +154,7 @@
 
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-left">
 
                 <div class="img-card">
 
@@ -180,7 +184,7 @@
 
         <div class="content">
 
-            <div class="text-img-content">
+            <div class="text-img-content" data-aos="fade-right">
 
                 <img src="/assets/undraw_community_8nwl.svg" alt="" width="300px" height="190px">
 
@@ -192,7 +196,7 @@
 
             </div>
 
-            <div class="text-img-content">
+            <div class="text-img-content" data-aos="fade-left">
 
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin, erat et mattis
@@ -204,7 +208,7 @@
 
             </div>
 
-            <div class="text-img-content">
+            <div class="text-img-content" data-aos="fade-right">
 
                 <img src="/assets/undraw_doctors_hwty.svg" alt="" width="300px" height="190px">
 
@@ -398,6 +402,7 @@
         }
     </script>
 
+    <!-- QR CODE -->
     <script src="/js/qrcode.min.js"></script>
 
     <script type="text/javascript">
@@ -411,6 +416,11 @@
             correctLevel: QRCode.CorrectLevel.H
         });
 
+    </script>
+
+    <!-- Animation scroll -->
+    <script>
+        AOS.init();
     </script>
 
 </body>
