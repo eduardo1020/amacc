@@ -401,6 +401,56 @@ footer p a {
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
     
+    .principal-content {
+        border: 1px solid red;
+        padding: 0;
+    }
+    .principal-content img {
+        display: none;
+    }
+    .principal-content .social-media-top svg {
+        width: 30px;
+        height: 30px;
+    }
+    .principal-content h1 {
+        font-size: 1.5rem;
+    }
+    .texts {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .texts h1 {
+        border: 1px solid blue;
+        width: 100%;
+    }
+
+    .secao h1 {
+        font-size: 1.6rem;
+    }
+
+    .sobre {
+        padding: 10px;
+    }
+
+    .sobre p {
+        border: 1px solid red;
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+
+    .sobre img {
+        width: 270px;
+        height: 200px;
+
+        margin-top: 20px;
+        margin-left: -100px;
+    }
+
+    .sobre .image-border .border-purple {
+        width: 270px;
+        height: 200px;
+    }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -423,7 +473,7 @@ footer p a {
     
 }
 
-/* RESPONSIVE MENU */
+/* RESPONSIVE MENU
 @media (max-width: 991px) {
     header {
         display: flex;
@@ -434,14 +484,14 @@ footer p a {
     .navigation {
         display: none;
     }
-    /* responsive menu */
+    /* responsive menu
     .navigation {
         position: fixed;
     }
     .toggle {
         position: fixed;
         top: 20px;
-        right: 20px;
+        right: 40px;
         width: 40px;
         height: 40px;
         background: url('./assets/menu.svg') no-repeat center;
@@ -466,3 +516,4 @@ footer p a {
         flex-direction: column;
     }
 }
+*/
