@@ -6,6 +6,10 @@
     font-family: 'Dosis', sans-serif;
 }
 
+body {
+    max-width: 100%;
+}
+
 /* HEADER */
 
 header {
@@ -123,8 +127,6 @@ header h1 {
 .sobre .img-sobre {
     display: flex;
     justify-content: center;
-    margin-left: -25%;
-    margin-top: 3%;
 }
 
 /* SECTION MISSÃO */
@@ -203,7 +205,6 @@ header h1 {
     margin-left: 8%;
 
     color: #7A28CB;
-    font-size: 1.3rem;
     font-weight: 600;
 }
 
@@ -402,8 +403,8 @@ footer p a {
 @media (max-width: 575.98px) {
     
     .principal-content {
-        border: 1px solid red;
         padding: 0;
+        width: 100%;
     }
     .principal-content img {
         display: none;
@@ -416,12 +417,11 @@ footer p a {
         font-size: 1.5rem;
     }
     .texts {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         width: 100%;
     }
 
     .texts h1 {
-        border: 1px solid blue;
         width: 100%;
     }
 
@@ -434,20 +434,18 @@ footer p a {
     }
 
     .sobre p {
-        border: 1px solid red;
+        margin-top: 20px;
         text-align: justify;
         font-size: 0.9rem;
     }
 
     .sobre img {
-        width: 270px;
-        height: 200px;
-
-        margin-top: 20px;
-        margin-left: -100px;
+        width: 230px;
+        height: 150px;
     }
 
     .sobre .image-border .border-purple {
+        display: none;
         width: 270px;
         height: 200px;
     }
@@ -460,7 +458,6 @@ footer p a {
     .missao .card-content .card {
         width: 100%;
         margin-bottom: 20%;
-        border: 1px solid red;
     }
 
     .missao .card-content .card p {
@@ -468,13 +465,13 @@ footer p a {
     }
 
     .servicos .content {
-        border: 1px solid blue;
         padding: 0;
     }
 
     .servicos .content .text-img-content {
         flex-direction: column;
         width: 100%;
+        padding: 10px;
     }
 
     .servicos .content .text-img-content img {
@@ -482,14 +479,12 @@ footer p a {
     }
 
     .servicos .content .text-img-content p {
-        border: 1px solid red;
         width: 100%;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         margin-left: 0;
     }
 
     .trabalhos .content-trabalhos .trabalho {
-        border: 1px solid red;
         margin: 15px;
     }
 
@@ -524,11 +519,48 @@ footer p a {
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .principal-content .texts {
+        font-size: 0.5rem;
+    }
 
+    .sobre {
+        font-size: 0.6rem;
+    }
+
+    .missao .card-content {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .missao .card {
+        margin: 10px;
+        width: 100%;
+    }
+
+    .missao .text-card p {
+        font-size: 0.9rem;
+    }
+
+    .servicos .content {
+        padding: 0;
+    }
+
+    .servicos .text-img-content p {
+        font-size: 0.8rem;
+    }
+
+    .trabalhos .content-trabalhos .trabalho {
+        margin: 10px;
+    }
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .sobre .img-sobre img {
+        margin-left: -25%;
+        margin-top: 3%;
+    }
 
 }
 
@@ -537,7 +569,7 @@ footer p a {
     
 }
 
-/* RESPONSIVE MENU
+/*RESPONSIVE MENU*/
 @media (max-width: 991px) {
     header {
         display: flex;
@@ -548,14 +580,14 @@ footer p a {
     .navigation {
         display: none;
     }
-    /* responsive menu
+    
     .navigation {
         position: fixed;
     }
     .toggle {
         position: fixed;
-        top: 20px;
-        right: 40px;
+        top: 10px;
+        right: 20px;
         width: 40px;
         height: 40px;
         background: url('./assets/menu.svg') no-repeat center;
@@ -565,9 +597,11 @@ footer p a {
     .toggle.active {
         background: url('./assets/x.svg') no-repeat center;
         cursor: pointer;
+        z-index: 2000;
         
     }
     .navigation.active {
+        border: 1px solid red;
         position: fixed;
         top: 0;
         left: 0;
@@ -578,6 +612,6 @@ footer p a {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        z-index: 1000;
     }
 }
-*/
