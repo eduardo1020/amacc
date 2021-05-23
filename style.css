@@ -8,9 +8,14 @@
 
 html, body {
     max-width: 100%;
+    scroll-behavior: smooth;
 }
 
 /* HEADER */
+
+p {
+    font-family: 'Lato', sans-serif;
+}
 
 header {
     display: flex;
